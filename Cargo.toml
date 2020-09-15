@@ -1,5 +1,5 @@
 [package]
-name = "rusting"
+name = "fizzbuzz"
 version = "0.1.0"
 authors = ["Hugo B Tiburtino <sudohbt@gmail.com>"]
 edition = "2018"

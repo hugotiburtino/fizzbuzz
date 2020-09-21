@@ -19,5 +19,5 @@ fn wellcome() {
 
     let number: u32 = parse_input(number);
     
-    count_up_to(number);
+    count_up_to(number, &mut std::io::stdout());
 }

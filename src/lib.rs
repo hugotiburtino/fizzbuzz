@@ -1,3 +1,5 @@
+use std::io::Write;
+
 fn fizzbuzz(number: u32) -> String {
     match (number % 3, number % 5) {
         (0, 0) => "fizzbuzz".to_string(),
@@ -7,9 +9,9 @@ fn fizzbuzz(number: u32) -> String {
     }
 }
 
-pub fn count_up_to(number: u32) -> () {
+pub fn count_up_to(number: u32, writer: &mut dyn Write) -> () {
     for i in 1..=number {
-        println!("{}", fizzbuzz(i))
+        let _ = writeln!(writer, "{}", fizzbuzz(i));
     }
 }
 

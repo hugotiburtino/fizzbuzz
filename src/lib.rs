@@ -37,6 +37,6 @@ mod tests {
     #[should_panic(expected = "is not a positive number")]
     fn test_parse_input() {
         parse_input("-50".to_string());
-        parse_input("I dont want to put a number".to_string());
+        parse_input("NaN causes error".to_string());
     }
 }
